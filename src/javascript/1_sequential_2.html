@@ -1,0 +1,80 @@
+<html>
+
+    <body>
+        <!-- This table holds the results of the email check: -->
+        <table id="unreadMailTable" border="1">
+            <thead>
+                <tr>
+                    <th>Account</th>
+                    <th>Unread Count</th>
+                    <th>Response Time</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+
+        <!-- The elapsedTime element will display the total elapsed time of the mail check operations: -->
+        <p>
+            Elapsed time: <span id="elapsedTime">Checking...</span>
+        </p>
+        <script>
+            var endTime = new Date().getTime(); // Initialize endTime with the current time
+
+            // Returns a Promise that resolves after a specified number of milliseconds (ms). This
+            // simulates a delay, mimicking server latency:
+            function sleep(ms) {
+                return new Promise(resolve => setTimeout(resolve, ms));
+            }
+
+            async function checkEmail(address) {
+                // Random value between 1 and 3 (inclusive), simulating server response time in seconds:
+                var randomServerLatency = Math.floor(Math.random() * 3) + 1;
+                // Random int between 1 and 5 (inclusive), simulating the number of unread messages:
+                var randomUnreadCount = Math.floor(Math.random() * 10) + 1;
+
+                // Simulate server delay:
+                await sleep(randomServerLatency * 1000);
+
+                // Add a row to the table with information about the email check:
+                {
+                    var table = document.getElementById("unreadMailTable").getElementsByTagName('tbody')[0];
+
+                    var newRow = table.insertRow();
+
+                    var cell1 = newRow.insertCell(0);
+                    var cell2 = newRow.insertCell(1);
+                    var cell3 = newRow.insertCell(2);
+
+                    cell1.innerHTML = address;
+                    cell2.innerHTML = randomUnreadCount;
+                    cell3.innerHTML = `${randomServerLatency} second(s)`;
+                }
+
+                // Update the ending time:
+                endTime = new Date().getTime();
+            }
+
+            async function main() {
+                // Record the start time of the operations:
+                var startTime = new Date().getTime();
+
+                // Check 3 emails; wait for each to finish:
+                {
+                    await checkEmail('john.doe@gmail.com');
+                    await checkEmail('john.doe@outlook.com');
+                    await checkEmail('john.doe@aol.com');
+                }
+
+                // Calculate the elapsed time for all operations:
+                var elapsedTimeInSeconds = (endTime - startTime) / 1000;
+
+                // Update the webpage with the elapsed time:
+                document.getElementById('elapsedTime').innerHTML = `${Math.round(elapsedTimeInSeconds)} seconds`;
+            }
+
+            main();
+        </script>
+    </body>
+
+</html>
