@@ -1,6 +1,8 @@
 # Language Support
 
-You can skip the Language Support section if you just want to view the code. Assumes you're using Linux.
+You can skip the Language Support section if you just want to view the code.
+
+Assumes you're using Linux.
 
 ## Python
 

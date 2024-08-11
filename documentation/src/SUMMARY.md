@@ -1,11 +1,16 @@
 # Summary
 
 - [Introduction](./pages/introduction.md)
-- [Preparation](./pages/preparation.md)
-  - [Language Support](./pages/prep/language_support.md)
-  - [Viewing and Editing Code](./pages/prep/view_edit_code.md)
-  - [Code Samples](./pages/prep/code_samples.md)
-- [Languages](./pages/languages.md)
+
+# Preparation
+
+- [Language Support](./pages/prep/language_support.md)
+- [Viewing and Editing Code](./pages/prep/view_edit_code.md)
+- [Code Samples](./pages/prep/code_samples.md)
+
+# Languages
+
+- [Language Selection](./pages/languages.md)
   - [Python](./pages/languages/python.md)
   - [JavaScript](./pages/languages/javascript.md)
   - [Rust](./pages/languages/rust.md)
