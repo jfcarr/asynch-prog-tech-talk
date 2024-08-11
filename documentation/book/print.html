@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="pages/preparation.html"><strong aria-hidden="true">2.</strong> Preparation</a></li><li class="chapter-item expanded "><a href="pages/languages.html"><strong aria-hidden="true">3.</strong> Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pages/languages/python.html"><strong aria-hidden="true">3.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="pages/languages/javascript.html"><strong aria-hidden="true">3.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="pages/languages/rust.html"><strong aria-hidden="true">3.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="pages/languages/go.html"><strong aria-hidden="true">3.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="pages/languages/cpp.html"><strong aria-hidden="true">3.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="pages/languages/dotnet.html"><strong aria-hidden="true">3.6.</strong> .NET</a></li><li class="chapter-item expanded "><a href="pages/languages/java.html"><strong aria-hidden="true">3.7.</strong> Java</a></li><li class="chapter-item expanded "><a href="pages/languages/ruby.html"><strong aria-hidden="true">3.8.</strong> Ruby</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded "><a href="pages/preparation.html"><strong aria-hidden="true">2.</strong> Preparation</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pages/prep/language_support.html"><strong aria-hidden="true">2.1.</strong> Language Support</a></li><li class="chapter-item expanded "><a href="pages/prep/view_edit_code.html"><strong aria-hidden="true">2.2.</strong> Viewing and Editing Code</a></li><li class="chapter-item expanded "><a href="pages/prep/code_samples.html"><strong aria-hidden="true">2.3.</strong> Code Samples</a></li></ol></li><li class="chapter-item expanded "><a href="pages/languages.html"><strong aria-hidden="true">3.</strong> Languages</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pages/languages/python.html"><strong aria-hidden="true">3.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="pages/languages/javascript.html"><strong aria-hidden="true">3.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="pages/languages/rust.html"><strong aria-hidden="true">3.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="pages/languages/go.html"><strong aria-hidden="true">3.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="pages/languages/cpp.html"><strong aria-hidden="true">3.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="pages/languages/c.html"><strong aria-hidden="true">3.6.</strong> C</a></li><li class="chapter-item expanded "><a href="pages/languages/dotnet.html"><strong aria-hidden="true">3.7.</strong> .NET</a></li><li class="chapter-item expanded "><a href="pages/languages/java.html"><strong aria-hidden="true">3.8.</strong> Java</a></li><li class="chapter-item expanded "><a href="pages/languages/ruby.html"><strong aria-hidden="true">3.9.</strong> Ruby</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -176,39 +176,52 @@
                     <main>
                         <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
 <blockquote>
-<p>"The best technical solution is one that scratches your own itch."</p>
-<p><em>Klingon proverb</em></p>
+<p>The best technical solution is one that scratches your own itch. (Klingon proverb)</p>
 </blockquote>
 <p>Solving a real problem is an effective way to learn.  We'll use an example that lends itself well to asynchronous processing: Checking multiple email accounts on IMAP servers.</p>
 <p>We'll implement a solution in multiple languages so that we may compare the pros and cons of each language's method.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preparation"><a class="header" href="#preparation">Preparation</a></h1>
-<h2 id="language-support"><a class="header" href="#language-support">Language Support</a></h2>
+<ol>
+<li>Language Support</li>
+<li>Viewing and Editing Code</li>
+<li>Code Samples</li>
+</ol>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="language-support"><a class="header" href="#language-support">Language Support</a></h1>
 <p>You can skip the Language Support section if you just want to view the code. Assumes you're using Linux.</p>
-<h3 id="python"><a class="header" href="#python">Python</a></h3>
+<h2 id="python"><a class="header" href="#python">Python</a></h2>
 <p>The Python 3 interpreter is probably already installed.  If not, you should be able to find it in your package manager.</p>
-<h3 id="javascript"><a class="header" href="#javascript">JavaScript</a></h3>
+<h2 id="javascript"><a class="header" href="#javascript">JavaScript</a></h2>
 <p>No special setup needed: You can view the .HTML source in any editor, and any installed browser can load it.</p>
-<h3 id="rust"><a class="header" href="#rust">Rust</a></h3>
+<h2 id="rust"><a class="header" href="#rust">Rust</a></h2>
 <p>Instructions here: <a href="https://www.rust-lang.org/learn/get-started">https://www.rust-lang.org/learn/get-started</a></p>
-<h3 id="go"><a class="header" href="#go">Go</a></h3>
+<h2 id="go"><a class="header" href="#go">Go</a></h2>
 <p>Instructions here: <a href="https://go.dev/learn/">https://go.dev/learn/</a></p>
-<h3 id="c"><a class="header" href="#c">C++</a></h3>
-<p>If the C++ compiler isn't already installed, you can find it in your package manager.</p>
-<p>I'm using the GNU C++ compiler (g++).  You should be able to use Clang if you prefer, but you'll need to tweak the Makefile in the source directory.</p>
-<h3 id="net--c"><a class="header" href="#net--c">.NET / C#</a></h3>
+<h2 id="c-and-c"><a class="header" href="#c-and-c">C and C++</a></h2>
+<p>If the C and C++ compilers aren't already installed, you can find them in your package manager.</p>
+<p>I'm using the GNU C (gcc) and C++ (g++) compilers.  You should be able to use Clang if you prefer, but you'll need to tweak the Makefile in the source directories.</p>
+<h2 id="net--c"><a class="header" href="#net--c">.NET / C#</a></h2>
 <p>Instructions here: <a href="https://dotnet.microsoft.com/en-us/download">https://dotnet.microsoft.com/en-us/download</a></p>
 <p>I'm using .NET 8.</p>
-<h3 id="java"><a class="header" href="#java">Java</a></h3>
+<h2 id="java"><a class="header" href="#java">Java</a></h2>
 <p>If Java isn't already installed, you can either install it from your package manager, or from here: <a href="https://openjdk.org/">https://openjdk.org/</a></p>
-<h3 id="ruby"><a class="header" href="#ruby">Ruby</a></h3>
+<p>I'm using Java 21.</p>
+<h2 id="ruby"><a class="header" href="#ruby">Ruby</a></h2>
 <p>Ruby can be installed from your package manager.</p>
-<h2 id="viewing-and-editing-code"><a class="header" href="#viewing-and-editing-code">Viewing and Editing Code</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="viewing-and-editing-code"><a class="header" href="#viewing-and-editing-code">Viewing and Editing Code</a></h1>
 <p>You should be able to use any editor or IDE you prefer, but I highly recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a>: You can install extensions specific to each language so that you can stay in the same editor.</p>
 <p>(I will probably be using <a href="https://zed.dev/download">Zed</a> for Ruby though: I've had some trouble getting the Ruby language server to work in VS Code.)</p>
-<h2 id="code-samples"><a class="header" href="#code-samples">Code Samples</a></h2>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="code-samples"><a class="header" href="#code-samples">Code Samples</a></h1>
 <p>Clone or download the code sample repo from here: <a href="https://github.com/jfcarr/asynch-prog-tech-talk">https://github.com/jfcarr/asynch-prog-tech-talk</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="languages"><a class="header" href="#languages">Languages</a></h1>
-<p>I selected eight popular programming languages, all of which have strong support for asynchronous programming.</p>
+<p>I selected nine popular programming languages, all(-ish) of which have strong support for asynchronous programming.</p>
+<h2 id="how-did-i-choose"><a class="header" href="#how-did-i-choose">How Did I Choose?</a></h2>
+<ul>
+<li><a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a></li>
+<li><a href="https://pypl.github.io/PYPL.html">PYPL PopularitY of Programming Language Index</a></li>
+<li><a href="https://openhub.net/languages/compare">Language Comparison</a> on Black Duck Open Hub</li>
+<li><a href="https://survey.stackoverflow.co/2024/technology">Stack Overflow 2024 Developer Survey</a></li>
+</ul>
+<p>I also tweaked the presentation order based on a language popularity poll on Discord.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="python-1"><a class="header" href="#python-1">Python</a></h1>
 <h2 id="highlights"><a class="header" href="#highlights">Highlights</a></h2>
 <ul>
@@ -248,7 +261,7 @@
 <li>Does <em>not</em> understand <code>await</code>: Uses <code>wait groups</code> to track asynchronous operations.</li>
 <li><strong>[PATTERN]</strong> Expects shared variables to be protected by a <code>mutex</code>.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="c-1"><a class="header" href="#c-1">C++</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="c"><a class="header" href="#c">C++</a></h1>
 <h2 id="highlights-4"><a class="header" href="#highlights-4">Highlights</a></h2>
 <ul>
 <li>Expected values are <code>futures</code>.</li>
@@ -256,8 +269,21 @@
 <li><code>Thread</code>, <code>future</code>, and <code>mutex</code> support are all part of the standard library.</li>
 <li>Manages task groups by pushing asynchronous calls to a vector of futures.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="net--c-1"><a class="header" href="#net--c-1">.NET / C#</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="c-1"><a class="header" href="#c-1">C</a></h1>
 <h2 id="highlights-5"><a class="header" href="#highlights-5">Highlights</a></h2>
+<ul>
+<li>C does not have built-in support for asynchronous operations.
+<ul>
+<li>We will leverage Linux POSIX libraries.</li>
+<li>We could have used select() or poll() or fork() instead.</li>
+<li>There are also asynchronous libraries like <code>libuv</code> and <code>libevent</code>.</li>
+</ul>
+</li>
+<li>More challenging: Lots of pointer references being passed around.</li>
+</ul>
+<p><img src="pages/languages/../../images/here-be-dragons.jpg" alt="" /></p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="net--c-1"><a class="header" href="#net--c-1">.NET / C#</a></h1>
+<h2 id="highlights-6"><a class="header" href="#highlights-6">Highlights</a></h2>
 <ul>
 <li>Asynchronous support is part of the standard library.</li>
 <li>Manages wait groups with a list of <code>Task</code> objects.
@@ -267,7 +293,7 @@
 </li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="java-1"><a class="header" href="#java-1">Java</a></h1>
-<h2 id="highlights-6"><a class="header" href="#highlights-6">Highlights</a></h2>
+<h2 id="highlights-7"><a class="header" href="#highlights-7">Highlights</a></h2>
 <ul>
 <li>Asynchronous support is part of the standard library.</li>
 <li>In Java, a promised values is called <code>CompletableFuture</code>.</li>
@@ -275,7 +301,7 @@
 <li>Interruptable threads must have exception handlers.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ruby-1"><a class="header" href="#ruby-1">Ruby</a></h1>
-<h2 id="highlights-7"><a class="header" href="#highlights-7">Highlights</a></h2>
+<h2 id="highlights-8"><a class="header" href="#highlights-8">Highlights</a></h2>
 <ul>
 <li>Asynchronous support is part of the standard library.</li>
 <li>In Ruby, an asynchronous task is of type <code>Thread</code>.</li>
@@ -299,22 +325,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
