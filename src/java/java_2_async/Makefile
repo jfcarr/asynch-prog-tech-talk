@@ -2,6 +2,7 @@ default:
 	@echo 'Targets:'
 	@echo '  run'
 	@echo '  build'
+	@echo '  clean'
 
 run: build
 	java -cp bin App
