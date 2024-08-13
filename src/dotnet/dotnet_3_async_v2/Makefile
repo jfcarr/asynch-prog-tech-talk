@@ -1,0 +1,10 @@
+default:
+	@echo 'Targets:'
+	@echo '  run'
+	@echo '  build'
+
+run:
+	dotnet run
+
+build:
+	dotnet build dotnet_3_async_v2.csproj
