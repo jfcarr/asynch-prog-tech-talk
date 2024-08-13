@@ -24,14 +24,14 @@ func main() async {
     let start_time: Date = Date()
 
     // Define an array of email addresses to check:
-    let emailAddresses: [String] = [
+    let email_addresses: [String] = [
         "john.doe@gmail.com",
         "john.doe@outlook.com",
         "john.doe@aol.com"
     ]
 
     // Map each email address to a Task that calls the check_email function asynchronously:
-    let tasks: [Task<UInt32, Never>] = emailAddresses.map { address in
+    let tasks: [Task<UInt32, Never>] = email_addresses.map { address in
         Task {
             await check_email(address: address)
         }
