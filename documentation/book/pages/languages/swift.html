@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>C - Unlocking the Power of Asynchronous Programming: Techniques for Building Responsive and Scalable Applications</title>
+        <title>Swift - Unlocking the Power of Asynchronous Programming: Techniques for Building Responsive and Scalable Applications</title>
 
 
         <!-- Custom HTML head -->
@@ -88,7 +88,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="../../pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Preparation</li><li class="chapter-item expanded "><a href="../../pages/prep/language_support.html"><strong aria-hidden="true">2.</strong> Language Support</a></li><li class="chapter-item expanded "><a href="../../pages/prep/view_edit_code.html"><strong aria-hidden="true">3.</strong> Viewing and Editing Code</a></li><li class="chapter-item expanded "><a href="../../pages/prep/code_samples.html"><strong aria-hidden="true">4.</strong> Code Samples</a></li><li class="chapter-item expanded affix "><li class="part-title">Languages</li><li class="chapter-item expanded "><a href="../../pages/languages.html"><strong aria-hidden="true">5.</strong> Language Selection</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../pages/languages/python.html"><strong aria-hidden="true">5.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="../../pages/languages/javascript.html"><strong aria-hidden="true">5.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="../../pages/languages/rust.html"><strong aria-hidden="true">5.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="../../pages/languages/go.html"><strong aria-hidden="true">5.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="../../pages/languages/cpp.html"><strong aria-hidden="true">5.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="../../pages/languages/c.html" class="active"><strong aria-hidden="true">5.6.</strong> C</a></li><li class="chapter-item expanded "><a href="../../pages/languages/dotnet.html"><strong aria-hidden="true">5.7.</strong> .NET</a></li><li class="chapter-item expanded "><a href="../../pages/languages/java.html"><strong aria-hidden="true">5.8.</strong> Java</a></li><li class="chapter-item expanded "><a href="../../pages/languages/ruby.html"><strong aria-hidden="true">5.9.</strong> Ruby</a></li><li class="chapter-item expanded "><a href="../../pages/languages/swift.html"><strong aria-hidden="true">5.10.</strong> Swift</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="../../pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Preparation</li><li class="chapter-item expanded "><a href="../../pages/prep/language_support.html"><strong aria-hidden="true">2.</strong> Language Support</a></li><li class="chapter-item expanded "><a href="../../pages/prep/view_edit_code.html"><strong aria-hidden="true">3.</strong> Viewing and Editing Code</a></li><li class="chapter-item expanded "><a href="../../pages/prep/code_samples.html"><strong aria-hidden="true">4.</strong> Code Samples</a></li><li class="chapter-item expanded affix "><li class="part-title">Languages</li><li class="chapter-item expanded "><a href="../../pages/languages.html"><strong aria-hidden="true">5.</strong> Language Selection</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../pages/languages/python.html"><strong aria-hidden="true">5.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="../../pages/languages/javascript.html"><strong aria-hidden="true">5.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="../../pages/languages/rust.html"><strong aria-hidden="true">5.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="../../pages/languages/go.html"><strong aria-hidden="true">5.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="../../pages/languages/cpp.html"><strong aria-hidden="true">5.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="../../pages/languages/c.html"><strong aria-hidden="true">5.6.</strong> C</a></li><li class="chapter-item expanded "><a href="../../pages/languages/dotnet.html"><strong aria-hidden="true">5.7.</strong> .NET</a></li><li class="chapter-item expanded "><a href="../../pages/languages/java.html"><strong aria-hidden="true">5.8.</strong> Java</a></li><li class="chapter-item expanded "><a href="../../pages/languages/ruby.html"><strong aria-hidden="true">5.9.</strong> Ruby</a></li><li class="chapter-item expanded "><a href="../../pages/languages/swift.html" class="active"><strong aria-hidden="true">5.10.</strong> Swift</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -173,31 +173,22 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="c"><a class="header" href="#c">C</a></h1>
+                        <h1 id="swift"><a class="header" href="#swift">Swift</a></h1>
 <h2 id="highlights"><a class="header" href="#highlights">Highlights</a></h2>
 <ul>
-<li>C does not have built-in support for asynchronous operations.
-<ul>
-<li>We will leverage Linux POSIX libraries.</li>
-<li>We could have used select() or poll() or fork() instead.</li>
-<li>There are also asynchronous libraries like <code>libuv</code> and <code>libevent</code>.</li>
+<li>Uses async/await syntax.</li>
+<li>Asynchronous support is part of the standard library.</li>
+<li>Syntactically, the code is similar to Rust.</li>
 </ul>
-</li>
-<li>More challenging: Lots of pointer references being passed around.</li>
-</ul>
-<p><img src="../../images/here-be-dragons.jpg" alt="" /></p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="../../pages/languages/cpp.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="../../pages/languages/ruby.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next prefetch" href="../../pages/languages/dotnet.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                                <i class="fa fa-angle-right"></i>
-                            </a>
 
                         <div style="clear: both"></div>
                     </nav>
@@ -205,13 +196,10 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="../../pages/languages/cpp.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="../../pages/languages/ruby.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next prefetch" href="../../pages/languages/dotnet.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
-                        <i class="fa fa-angle-right"></i>
-                    </a>
             </nav>
 
         </div>

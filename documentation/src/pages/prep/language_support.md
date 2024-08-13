@@ -41,3 +41,7 @@ I'm using Java 21.
 ## Ruby
 
 Ruby can be installed from your package manager.
+
+## Swift
+
+Instructions here: <https://www.swift.org/getting-started/>

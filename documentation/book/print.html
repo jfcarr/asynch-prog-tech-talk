@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Preparation</li><li class="chapter-item expanded "><a href="pages/prep/language_support.html"><strong aria-hidden="true">2.</strong> Language Support</a></li><li class="chapter-item expanded "><a href="pages/prep/view_edit_code.html"><strong aria-hidden="true">3.</strong> Viewing and Editing Code</a></li><li class="chapter-item expanded "><a href="pages/prep/code_samples.html"><strong aria-hidden="true">4.</strong> Code Samples</a></li><li class="chapter-item expanded affix "><li class="part-title">Languages</li><li class="chapter-item expanded "><a href="pages/languages.html"><strong aria-hidden="true">5.</strong> Language Selection</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pages/languages/python.html"><strong aria-hidden="true">5.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="pages/languages/javascript.html"><strong aria-hidden="true">5.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="pages/languages/rust.html"><strong aria-hidden="true">5.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="pages/languages/go.html"><strong aria-hidden="true">5.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="pages/languages/cpp.html"><strong aria-hidden="true">5.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="pages/languages/c.html"><strong aria-hidden="true">5.6.</strong> C</a></li><li class="chapter-item expanded "><a href="pages/languages/dotnet.html"><strong aria-hidden="true">5.7.</strong> .NET</a></li><li class="chapter-item expanded "><a href="pages/languages/java.html"><strong aria-hidden="true">5.8.</strong> Java</a></li><li class="chapter-item expanded "><a href="pages/languages/ruby.html"><strong aria-hidden="true">5.9.</strong> Ruby</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="pages/introduction.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li class="chapter-item expanded affix "><li class="part-title">Preparation</li><li class="chapter-item expanded "><a href="pages/prep/language_support.html"><strong aria-hidden="true">2.</strong> Language Support</a></li><li class="chapter-item expanded "><a href="pages/prep/view_edit_code.html"><strong aria-hidden="true">3.</strong> Viewing and Editing Code</a></li><li class="chapter-item expanded "><a href="pages/prep/code_samples.html"><strong aria-hidden="true">4.</strong> Code Samples</a></li><li class="chapter-item expanded affix "><li class="part-title">Languages</li><li class="chapter-item expanded "><a href="pages/languages.html"><strong aria-hidden="true">5.</strong> Language Selection</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="pages/languages/python.html"><strong aria-hidden="true">5.1.</strong> Python</a></li><li class="chapter-item expanded "><a href="pages/languages/javascript.html"><strong aria-hidden="true">5.2.</strong> JavaScript</a></li><li class="chapter-item expanded "><a href="pages/languages/rust.html"><strong aria-hidden="true">5.3.</strong> Rust</a></li><li class="chapter-item expanded "><a href="pages/languages/go.html"><strong aria-hidden="true">5.4.</strong> Go</a></li><li class="chapter-item expanded "><a href="pages/languages/cpp.html"><strong aria-hidden="true">5.5.</strong> C++</a></li><li class="chapter-item expanded "><a href="pages/languages/c.html"><strong aria-hidden="true">5.6.</strong> C</a></li><li class="chapter-item expanded "><a href="pages/languages/dotnet.html"><strong aria-hidden="true">5.7.</strong> .NET</a></li><li class="chapter-item expanded "><a href="pages/languages/java.html"><strong aria-hidden="true">5.8.</strong> Java</a></li><li class="chapter-item expanded "><a href="pages/languages/ruby.html"><strong aria-hidden="true">5.9.</strong> Ruby</a></li><li class="chapter-item expanded "><a href="pages/languages/swift.html"><strong aria-hidden="true">5.10.</strong> Swift</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -203,13 +203,15 @@
 <p>I'm using Java 21.</p>
 <h2 id="ruby"><a class="header" href="#ruby">Ruby</a></h2>
 <p>Ruby can be installed from your package manager.</p>
+<h2 id="swift"><a class="header" href="#swift">Swift</a></h2>
+<p>Instructions here: <a href="https://www.swift.org/getting-started/">https://www.swift.org/getting-started/</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="viewing-and-editing-code"><a class="header" href="#viewing-and-editing-code">Viewing and Editing Code</a></h1>
 <p>You should be able to use any editor or IDE you prefer, but I highly recommend <a href="https://code.visualstudio.com/">Visual Studio Code</a>: You can install extensions specific to each language so that you can stay in the same editor.</p>
 <p>(I will probably be using <a href="https://zed.dev/download">Zed</a> for Ruby though: I've had some trouble getting the Ruby language server to work in VS Code.)</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="code-samples"><a class="header" href="#code-samples">Code Samples</a></h1>
 <p>Clone or download the code sample repo from here: <a href="https://github.com/jfcarr/asynch-prog-tech-talk">https://github.com/jfcarr/asynch-prog-tech-talk</a></p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="language-selection"><a class="header" href="#language-selection">Language Selection</a></h1>
-<p>I selected nine popular programming languages, all(-ish) of which have strong support for asynchronous programming.</p>
+<p>I selected ten popular programming languages, all(-ish) of which have strong support for asynchronous programming.</p>
 <h2 id="how-did-i-choose"><a class="header" href="#how-did-i-choose">How Did I Choose?</a></h2>
 <ul>
 <li><a href="https://www.tiobe.com/tiobe-index/">TIOBE Index</a></li>
@@ -302,6 +304,13 @@
 <li>Asynchronous support is part of the standard library.</li>
 <li>In Ruby, an asynchronous task is of type <code>Thread</code>.</li>
 <li>Task groups are managed as lists of threads.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="swift-1"><a class="header" href="#swift-1">Swift</a></h1>
+<h2 id="highlights-9"><a class="header" href="#highlights-9">Highlights</a></h2>
+<ul>
+<li>Uses async/await syntax.</li>
+<li>Asynchronous support is part of the standard library.</li>
+<li>Syntactically, the code is similar to Rust.</li>
 </ul>
 
                     </main>

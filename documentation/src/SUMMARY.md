@@ -20,3 +20,4 @@
   - [.NET](./pages/languages/dotnet.md)
   - [Java](./pages/languages/java.md)
   - [Ruby](./pages/languages/ruby.md)
+  - [Swift](./pages/languages/swift.md)
